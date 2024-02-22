@@ -9,7 +9,7 @@ import net.firestaff.mcp.mobiquityhomework.models.Category
 @Composable
 fun CategoryList(items: List<Category>, navController: NavController) {
 
-    LazyColumn() {
+    LazyColumn {
         items(items) { item ->
             ProductList(item, navController)
         }
